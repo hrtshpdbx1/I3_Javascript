@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Lien vers JS (si vous utilisez l'attribut defer sur vos scripts, qui signifie que le script doit être chargé après création de l'HTML) -->
+    <script defer src="./main.js"></script>
+
+</head>
+<body>
+    <!-- Touche F12 ou click droit Inspec ter pour ouvrir l'outil développeur -->
+
+    <!-- Il existe 3 endroits où écrire du JS 
+     * 1) à éviter absolument en JS Vanilla : Écrire directement dans une balise html -->
+     <button onclick="console.log('coucou depuis le bouton')" >Click Me</button>
+
+    <!-- 2) Dans une balise script dans la page html -->
+    <script>
+        console.log('Coucou depuis le script de la page HTML');
+    </script>
+
+    <button id="coucou">Clique Sur moi</button>
+
+    <!-- ✅ 3) Dans un fichier séparé qu'on va relier à notre page HTML -->
+    <!-- Attention : Toujours mettre le script à la fin du body pour être sûrs que votre html a entièrement été créé -->
+    <!-- <script src="./main.js"></script> -->
+ 
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentez-vous</title>
+
+    <link rel="stylesheet" href="./global.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+
+    <div id="box1" class="box">
+        <h1>Présentez-vous :</h1>
+        <form id="formulaire">
+            <input id="prenom" type="text" placeholder="Votre prénom">
+            <input id="nom" type="text" placeholder="Votre nom">
+            <input id="age" type="number" placeholder="Votre âge">
+            <input id="img-url" type="url" placeholder="L'image que vous aimez bien">
+            <!-- Attention, un button mis dans une balise form est un bouton type submit -->
+            <button type="button" id="valider">Valider</button>
+
+
+        </form>
+    </div>
+
+    <div id="box2" class="box">
+        <div class="buttons">
+            <button id="clair">Clair</button>
+            <button id="sombre">Sombre</button>
+            <button id="custom">Custom</button>
+        </div>
+
+        <h2>Résultat :</h2>
+
+        <div class="result">
+            <img id="image" src="" alt="">
+            <p id="resultat"></p>
+        </div>
+    </div>
+
+</body>
+</html>

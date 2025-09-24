@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body img {
+    max-width: 60%;
+
+}
+
+.container_calculette {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_calculette {
+    background-color: #f48fb1;
+    border: 2px solid #f06292;
+    border-radius: 50px 20px;
+    width: 40%;
+    /* margin: 10%; */
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-weight: bolder;
+    box-shadow:
+        1px 2px 2px hsl(351deg 100% 80% / 0.333),
+        2px 4px 4px hsl(351deg 100% 80%/ 0.333),
+        3px 6px 6px hsl(351deg 100% 80% / 0.333);
+
+}
+
+
+input {
+    background-color: white;
+    height: 30px;
+    min-width: 42px;
+    color: #880e4f;
+    border: 2px solid #f06292;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+button {
+    background-color: #d81b60;
+    height: 30px;
+    min-width: 30px;
+    /* padding: 5px 5px; */
+    font-size: 15px;
+    text-align: center;
+    color:  white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #880e4f;
+}
+
+button:hover {
+    background-color:  #ec407a;
+}
+
+button:active {
+    background-color:  #ec407a;
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+}
+
+#input_resultat {
+    background-color: lightgray;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+    -o-appearance: none;
+    margin: 0
+}

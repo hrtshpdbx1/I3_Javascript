@@ -1,0 +1,28 @@
+.jour {
+    background-color: lightyellow;
+    color : tomato;
+}
+
+.nuit {
+    background-color: darkblue;
+    color : lightgoldenrodyellow;
+}
+
+.fond {
+    background-color: gainsboro;
+    width: 600px;
+    height: 1rem;
+
+    border-radius: 0.5rem;
+
+    overflow: hidden;
+    /* permet de cacher tout ce qui dépasserait */
+}
+
+.jauge {
+    background-color: darkseagreen;
+    height: 100%;
+    width: 0;
+    /* max-width: 100%;  */
+    /* on peut aussi mettre max-width pour éviter que ça dépasse si l'utilisateur entre un truc trop grand  */
+}

@@ -1,0 +1,130 @@
+/* rose : #EDAFB8
+creme : #F7E1D7
+grischaud : #DEDBD2
+sauge : #B0C4B1
+vertfoncé : #4A5759 */
+
+
+body {
+    background-color: #F7E1D7;
+    color: #4A5759;
+
+}
+
+.choixThemes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.sectionFormulaire {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.containerFormulaire {
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.card_zoneFormulaire {
+  padding: 4rem;
+    background-color: #DEDBD2;
+    margin: 4rem;
+    border-radius: 30px;
+}
+
+
+.card_zoneReponse {
+    width: 50%;
+    height: 40%;  /* Pourquoi ça ne marche pas :((( ?  */
+    background-color: #EDAFB8;
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 30px;
+}
+
+form label {
+  display: block;         
+  margin-top: 1rem;       
+}
+
+form input {
+  display: block;         
+  margin-bottom: 1rem;    
+  padding: 0.3rem;        
+}
+
+button {
+    background-color: #4A5759;
+    border-radius: 30px;
+    color: whitesmoke;
+    border: none;
+    max-width: 200px;
+    height: 2.5rem;
+    margin: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+button:hover {
+   background-color: #B0C4B1; 
+   color:#4A5759  ;
+}
+
+
+ 
+/* ========================================== */
+/* -----  THEMES CLAIR/SOMBRE -------------- */
+/* ========================================== */
+
+
+
+.lightTheme.body
+{
+background-color: #F7E1D7;
+color: #4A5759;
+
+}
+
+.darkTheme.body {
+background-color :#4A5759;
+/* color: whitesmoke; */
+}
+
+.darkTheme.button {
+background-color: #F7E1D7;
+color: #4A5759;
+}
+
+.darkTheme #valider {
+background-color :#4A5759;
+color: whitesmoke;;   
+}
+
+.darkTheme.label {
+color: #4A5759;
+}
+
+.darkTheme.button:hover {
+   background-color: #B0C4B1; 
+   color:#4A5759  ;
+}
+
+ /* .otherTheme body
+{
+background-color:  ; 
+   color:;
+} 
+ */

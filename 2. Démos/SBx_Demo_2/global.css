@@ -1,0 +1,26 @@
+.jour {
+    background-color: lightyellow;
+    color:tomato
+}
+
+.nuit {
+    background-color: darkblue;
+    color :bisque
+}
+
+.fond {
+    background-color:darkgray;
+    width: 600px;
+    height: 1rem;
+
+    border-radius: 0.5rem;
+    /* overflow: hidden; */
+
+}
+
+.jauge
+{
+    background-color:green;
+    height: 100%;
+    width: 0%;
+}

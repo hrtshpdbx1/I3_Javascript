@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split''o resto</title>
+
+    <link href="global.css" rel="stylesheet">
+
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+
+    <!----------Main container  ------------->
+
+    <div class="mainContainer">
+
+
+        <!----------Card Formulaire  ------------->
+
+        <div class="cardFormulaire">
+
+            <form>
+                <div class="form-group">
+                    <label for="amountpaid">Note : </label>
+                    <input id="amountpaid" type="number" placeholder="0">
+                    <span class="icon">€</span>
+                </div>
+
+                <div class="form-group"><label for="tips"> Pourboire : </label>
+                    <input id="tips" type="number" placeholder="0"> <span class="icon">%</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="nb_guests">Nombre de personnes : </label>
+                    <input id="nb_guests" type="number" placeholder="👯?">
+                </div>
+
+
+            </form>
+            <!-- Bouton Calculer -->
+            <button id="calculer">
+                Calculer
+            </button>
+
+        </div>
+
+        <!---------- Card Montant  ------------->
+
+        <div class="cardMontant">
+
+            <div> Montant Pourboire</div>
+            <div id="tipsPercent"></div>
+            <div> Montant à payer </div>
+            <div id="amountPerPerson"></div>
+            <div>Montant total</div>
+            <div id="totalAmount"></div>
+
+            <!-- Bouton Réinitialiser -->
+            <button id="reset">
+                Réinitialiser
+            </button>
+
+
+        </div>
+
+
+
+</body>
+
+</html>
