@@ -1,44 +1,98 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1%;
+}
+
+.containerExo1 {
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(210, 187, 248);
+    padding: 3%;
+    margin: 2%;
+}
+
+.containerExo2 {
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(248, 187, 245);
+    padding: 3%;
+    margin: 2%;
+}
+
 .containerDistributeur {
-background-color: #A61C3C;
-color: white;
-border: black;
-display: flex;
-flex-direction: row;
-justify-content: center;
-width: 50%;
-gap: 5rem;
-padding: 5px;
+    background-color: #750e26;
+    border-radius: 20px;
+   padding: 3%;
+    margin: 2%;
+    color: white;
+    border: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    gap: 5rem;
+    padding: 5px;
+}
+
+.containerDistributeur2 {
+    background-color: #13771b;
+    border-radius: 20px;
+    padding: 3%;
+    margin: 2%;
+    color: white;
+    border: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    gap: 5rem;
+    padding: 5px;
 }
 
 
 .containerBoisson {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap : 3rem;
-padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .cardCafe,
 .cardThe,
 .cardCafeNoisette {
-display: flex;
-flex-direction: row;
-justify-content: center;   
-border: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #c22f51;
+    border-radius: 20px;
+    padding: 5%;
+    margin: 0.5%;
+
 
 }
 
 .cardCafe img,
 .cardThe img,
-.cardCafeNoisette img  {
+.cardCafeNoisette img {
     max-width: 50px;
     height: auto;
-    ratio : 1/1
+    aspect-ratio: 1/1
 }
 
+
 .containerResultat {
-display: flex;
-flex-direction: column;
-justify-content: center;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.cardImg img {
+    max-width: 50px;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-color: lightgray padding: auto;
+
 }

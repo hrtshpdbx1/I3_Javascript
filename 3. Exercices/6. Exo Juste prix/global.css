@@ -1,0 +1,147 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    /* background-color: #EEAECA;
+    background-color: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background-size:cover; */
+    margin: auto;
+
+
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+h1, h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600; /* Plus gras pour les titres */
+}
+
+
+.dynapuff  {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.petit-formal-script-regular {
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*<weight>: Use a value from 300 to 900
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+
+
+.containerJustePrix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1.5rem;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 5px 5px gray;
+    width: 50%;
+    height: 80%;
+    padding: 2%;
+    margin: 5%;
+    background: #38b6ff;
+
+}
+
+.containerJustePrix img {
+    max-width: 400px;
+}
+
+.containerLevel {
+    display: flex;
+    flex-direction: row;
+    min-width: 50%; 
+    justify-content: center;
+    gap:1.5rem;
+    gap: 2rem;
+    padding-bottom: 5%;
+}
+
+
+.containerLevel button {
+    background-color: #ec78e7;
+    color: white;
+    text-shadow: 2px 2px  #8438ff;
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    height: 20%;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.containerLevel button:nth-child(1){
+ font-family: "DynaPuff"
+}
+
+.containerLevel button:nth-child(2){
+ font-family: "Petit Formal Script"
+}
+
+.containerLevel button:nth-child(3) {
+ font-family: "Creepster"
+}
+
+
+input {
+  border: 2px solid #f00c0c;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.containerGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    width: 70%;
+    gap: 0.5rem;
+    border-radius: 25px;
+}
+
+.containerGame button {
+    background-color: #f00c0c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    height: 30%;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
