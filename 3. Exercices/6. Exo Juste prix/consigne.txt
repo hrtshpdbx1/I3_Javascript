@@ -1,0 +1,59 @@
+✅ 1/ récupérer éléments HTML 
+btn_easy
+btn_mild
+btn_hardcore
+
+input_user
+btn_go
+p_consigne
+p_resultat
+p_tentative
+
+2/ EventListener --> clic btn_easy : 
+nb_a_trouver = entre 1 et 10
+nb_tentative = 10
+
+Générer un un nombre aléatoire selon la difficulté : const nombreATrouver = Math.floor(Math.random() * 10 + 1);
+
+Réinitialise le nombre de tentatives
+Attribuer une valeur à nb_tentative = ok
+
+Affiche dans "consigne" la chaine de caractère "Proposez un chiffre entre 1 et 10 ou bien je meurs"
+Affiche les tentatives sous forme d'émojis avec padEnd()
+
+
+3/ EventListener clic BTN_GO : 
+récuper input_user
+Vérifier que c'est un nombre valide
+Comparer avec nombreATrouver
+
+déclarer game over (tentatives = 0)
+Si input_user < nombreATrouver et que nb_tentative > 0, affiche dans p_resultat "c'est plus que (input_user)"
+
+Si input_user > nombreATrouver et que nb_tentative > 0,, affiche dans p_resultat "c'est moins que (input_user)"
+
+Si input_user = nombreATrouver et que nb_tentative > 0,, affiche dans p_resultat "Gagné c'était bien input_user"
+
+Si nb_tentative = 0, affiche dans p_resultat "Perdu "
+Si input_user = Nan ou <1 ou >10, affiche dans p_resultat "Veuillez entrer un nombre valide"
+
+
+-----------
+
+// ! Si vous souhaitez faire les émojis pour les tentatives
+let tentatives = 5;
+// padEnd rajoute le caractère donné en deuxième paramètre à la fin de la chaine sur laquelle on utilisé padEnd autant de fois que nécessaire pour atteindre la taille précisée en premier paramètre
+
+console.log( "--".padEnd(tentatives, '*')  );
+console.log( "".padEnd(tentatives, '💲')  ); /* Un émoji prend la place de 2 caractères */
+console.log( "".padEnd(tentatives * 2 , '💲')  );
+
+console.log( "--".padStart(tentatives, '*') );
+console.log( "------".padStart(tentatives, '*'));
+
+
+
+easy (1-10, 10 tentatives)
+moyen (1-100, 10 tentatives)
+hardcore (1-1000, 15 tentatives)
+

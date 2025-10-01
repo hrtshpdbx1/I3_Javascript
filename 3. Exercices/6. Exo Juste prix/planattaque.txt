@@ -1,0 +1,72 @@
+
+
+----
+
+📋 Plan d'attaque - Le Juste Prix
+
+Phase 1 : Récupération des éléments HTML
+
+// Récupère tous les éléments dont tu auras besoin :
+// - Les 3 boutons de difficulté
+// - L'input pour le nombre
+// - Le bouton "Let's go"
+// - Les 2 paragraphes (résultat et tentatives)
+
+Phase 2 : Déclarer les variables globales
+
+Tu as besoin de variables qui "vivent" pendant toute la partie :
+Le nombre à trouver (celui généré aléatoirement)
+Le nombre de tentatives restantes
+Peut-être le nombre max pour la difficulté choisie
+
+Phase 3 : Coder la fonction de démarrage d'une partie
+
+Crée une fonction (par exemple demarrerPartie()) qui :
+Génère un nombre aléatoire selon la difficulté
+Réinitialise le nombre de tentatives
+Vide l'input et les messages
+Affiche les tentatives sous forme d'émojis avec padEnd()
+
+Phase 4 : Gérer les clics sur les boutons de difficulté
+
+Pour chaque bouton (easy, mild, hardcore) :
+Adapter le titre "entre 1 et X"
+Appeler ta fonction de démarrage avec les bons paramètres
+Pense à comment tu vas passer les infos (nombre max, tentatives max)
+
+Phase 5 : Gérer le clic sur "Let's go baby"
+
+Quand on clique, tu dois :
+Récupérer le nombre proposé par le joueur
+Vérifier que c'est valide (isNaN, dans les bonnes limites)
+Comparer avec le nombre à trouver :
+Si égal → Victoire ! 🎉
+Si plus petit → "C'est plus !"
+Si plus grand → "C'est moins !"
+Décrémenter les tentatives
+Mettre à jour l'affichage des tentatives (émojis)
+Vérifier si c'est game over (tentatives = 0)
+
+Phase 6 : Gérer la fin de partie
+Si victoire : afficher un message de félicitations
+Si défaite : afficher le nombre à trouver + message de défaite
+Bonus : désactiver l'input/bouton en fin de partie ?
+
+🎯 Conseils pratiques
+
+Commence simple :
+Fais d'abord fonctionner le mode facile en "dur" (1-10, 10 tentatives)
+Une fois que ça marche, rends ton code flexible pour les 3 niveaux
+Teste au fur et à mesure :
+Utilise des console.log() pour vérifier que tes variables ont les bonnes valeurs
+Teste les cas limites (nombre invalide, hors limites, etc.)
+
+Ordre logique de codage :
+✅ Récupération des éléments
+✅ Variables globales
+✅ Fonction de démarrage (version simple)
+✅ Logique du jeu (comparaison, tentatives)
+✅ Gestion des niveaux de difficulté
+✅ Polish (émojis, messages sympas)
+Tu veux qu'on commence par la phase 1 ensemble, ou tu te sens de te lancer seul(e) ? 🚀
+ 
