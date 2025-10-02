@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juste Prix</title>
+
+    <link rel="stylesheet" href="./global.css">
+
+    <script defer src="./main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="grain">
+        <div class="top">
+            <h1>Devine le prix !</h1>
+
+        </div>
+
+        <div class="bot">
+            <div class="buttons">
+
+                <button id="easy" class="btn">Facile</button>
+                <button id="medium" class="btn">Moyen</button>
+                <button id="hard" class="btn">Difficile</button>
+
+            </div>
+
+            <div id="game" class="game hidden">
+                <p id="guess"></p>
+
+                <p>Choisis un nombre entre 1 et <span id="nbMax">X</span> </p>
+
+                <input id="nbUser" type="number">
+
+                <button id="go" class="btn">Valider</button>
+
+                <p id="result"></p>
+            </div>
+
+            <div id="before-game" class="beforegame">
+                <p>Choisis une difficulté</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

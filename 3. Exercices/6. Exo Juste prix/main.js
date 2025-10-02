@@ -81,9 +81,14 @@ BTN_HARDCORE.addEventListener('click', () => {
     BTN_MILD.disabled = true;
 })
 
+//** ------------- FIN DIFFICULTE---------------------
+
+
+//** ------------- JEU ---------------------
+
 
 BTN_GO.addEventListener('click', () => {
-    if (nombreTentative>0) {
+    if (nombreTentative > 0) {
         nombreTentative-- // décrémentation : diminue le nb de tentatives de 1
     }
     else if (nombreTentative === 0) {
@@ -91,9 +96,10 @@ BTN_GO.addEventListener('click', () => {
         DIV_IMG.src = 'nay.png'
         BTN_GO.disabled = true;
         BTN_EASY.disabled = false;
-BTN_MILD.disabled = false;
-BTN_HARDCORE.disabled = false;
+        BTN_MILD.disabled = false;
+        BTN_HARDCORE.disabled = false;
     }
+
 
     const nombreATester = INPUT_USER.valueAsNumber;
 
@@ -105,11 +111,11 @@ BTN_HARDCORE.disabled = false;
         P_RESULTAT.textContent = `Vous n'avez vraiment pas de coeur, je vous ai demandé de rentrer un nombre entre 1 et ${max} !😡`;
         DIV_IMG.src = 'nay.png'
 
-    //     //Si nb_tentative est égal à 0 :  
-    // } else if (nombreTentative === 0) {
-    //     P_RESULTAT.textContent = `Game Over ⛔`;
-    //     DIV_IMG.src = 'nay.png'
-    //     BTN_GO.disabled = true;
+        //     //Si nb_tentative est égal à 0 :  
+        // } else if (nombreTentative === 0) {
+        //     P_RESULTAT.textContent = `Game Over ⛔`;
+        //     DIV_IMG.src = 'nay.png'
+        //     BTN_GO.disabled = true;
 
         //Si nombreATester est plus petit que nombreATrouver et que nb_tentative est plus grand que  0 :  
     } else if (nombreATester < nombreATrouver && nombreTentative != 0) {
@@ -142,33 +148,43 @@ BTN_HARDCORE.disabled = false;
 })
 
 
-// // ! Comment faire un nombre aléatoire en javaScript ?
+//** ------------- FIN JEU ---------------------
 
-// console.log(Math.random());
-// //Math.random vous fait un nombre entre 0.00000000000... et 0.99999999...
 
-// // Du coup, si on veut un nombre entre 1 et 10
+// ? Bonus emoji
 
-// console.log(Math.random() * 10);
-// // Va faire un nombre entre 0.000000... et 9.999999...
+function showGuess(){
+    P_TENTATIVE.textContent
+}
 
-// console.log(Math.random() * 10 + 1);
-// // Va faire un nombre entre 1.000000... et 10.999999...
 
-// console.log(Math.floor(Math.random() * 10 + 1));
-// // Va faire un nombre entre 1 et 10
+// ! Comment faire un nombre aléatoire en javaScript ?
 
-// const nombreATrouver = Math.floor(Math.random() * 10 + 1);
+console.log(Math.random());
+//Math.random vous fait un nombre entre 0.00000000000... et 0.99999999...
 
-// // ! Si vous souhaitez faire les émojis pour les tentatives
-// let tentatives = 5;
-// // padEnd rajoute le caractère donné en deuxième paramètre à la fin de la chaine sur laquelle on utilisé padEnd autant de fois que nécessaire pour atteindre la taille précisée en premier paramètre
+// Du coup, si on veut un nombre entre 1 et 10
 
-// console.log("--".padEnd(tentatives, '*'));
-// console.log("".padEnd(tentatives, '💲')); /* Un émoji prend la place de 2 caractères */
-// console.log("".padEnd(tentatives * 2, '💲'));
+console.log(Math.random() * 10);
+// Va faire un nombre entre 0.000000... et 9.999999...
 
-// console.log("--".padStart(tentatives, '*'));
-// console.log("------".padStart(tentatives, '*'));
+console.log(Math.random() * 10 + 1);
+// Va faire un nombre entre 1.000000... et 10.999999...
+
+console.log(Math.floor(Math.random() * 10 + 1));
+// Va faire un nombre entre 1 et 10
+
+const nombreATrouver = Math.floor(Math.random() * 10 + 1);
+
+// ! Si vous souhaitez faire les émojis pour les tentatives
+let tentatives = 5;
+// padEnd rajoute le caractère donné en deuxième paramètre à la fin de la chaine sur laquelle on utilisé padEnd autant de fois que nécessaire pour atteindre la taille précisée en premier paramètre
+
+console.log("--".padEnd(tentatives, '*'));
+console.log("".padEnd(tentatives, '💲')); /* Un émoji prend la place de 2 caractères */
+console.log("".padEnd(tentatives * 2, '💲'));
+
+console.log("--".padStart(tentatives, '*'));
+console.log("------".padStart(tentatives, '*'));
 
 

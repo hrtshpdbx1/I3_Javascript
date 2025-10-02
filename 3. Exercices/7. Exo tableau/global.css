@@ -1,0 +1,36 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    background: linear-gradient(135deg, #ea66c9 0%, #1a6fbe 100%);
+    width: 100vw;
+    height: 100vh;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+.containerTableau {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 55%;
+    height: 60%;
+    padding: 1%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15);
+    /* semi-transparent */
+    backdrop-filter: blur(10px);
+    /* effet glass */
+    color: #ffffff;
+}
